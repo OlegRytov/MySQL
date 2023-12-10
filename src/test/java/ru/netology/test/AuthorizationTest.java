@@ -51,6 +51,6 @@ public class AuthorizationTest {
         verificationPage.verifyVerificationPageVisiblity();
         var verificationCode = DataHelper.generateRandomVerificationCode();
         verificationPage.verify(verificationCode.getCode());
-        LoginPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз");
+        LoginPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
     }
 }
